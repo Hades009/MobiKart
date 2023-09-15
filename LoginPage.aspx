@@ -55,7 +55,7 @@
             <div>
                 <asp:LinkButton runat="server" Font-Names="Calibri" Font-Size="Small" OnClick="Unnamed1_Click">Forgot Password  </asp:LinkButton>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:LinkButton runat="server" Font-Names="Calibri" Font-Size="Small" >Sign Up here</asp:LinkButton>
+                <asp:LinkButton runat="server" Font-Names="Calibri" Font-Size="Small" OnClick="Unnamed3_Click" >Sign Up here</asp:LinkButton>
             </div>
         </div>
     </form>

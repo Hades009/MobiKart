@@ -18,5 +18,10 @@ namespace MobileShoppingWebsite
         {
             Server.Transfer("ForgotPswd.aspx");
         }
+
+        protected void Unnamed3_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("RegisterPage.aspx");
+        }
     }
 }
