@@ -30,7 +30,7 @@
             <asp:TextBox ID="txtUsername" runat="server" CssClass="input-text"></asp:TextBox>
            
             <br />
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtUsername" ErrorMessage="UserName Required"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtUsername" ErrorMessage="Required Username"></asp:RequiredFieldValidator>
            
         </div>
         <div>
