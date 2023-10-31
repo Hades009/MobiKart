@@ -23,7 +23,7 @@
             <asp:TextBox ID="txtEmail" runat="server" TextMode="Email" CssClass="form-control" required="required"></asp:TextBox>
         </div>
         <div> 
-            <button class="btnVerify">Verify</button>
+            <asp:Button ID="Button1" runat="server" class="btnVerify" Text="Verify" />
         </div>
             <div>
 
@@ -36,7 +36,7 @@
         </div>
 
         <div>
-            <asp:Button ID="Conf" runat="server" class="btnConf" Text="Update"></asp:Button>
+            <asp:Button ID="Conf" runat="server" class="btnConf" Text="Update" OnClick="Conf_Click"></asp:Button>
         </div>
 
         </div>

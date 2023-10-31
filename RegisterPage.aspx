@@ -6,6 +6,11 @@
 <head runat="server">
     <title>Registration Form</title>
     <link rel="stylesheet" type="text/css" href="Register.css" />
+    <style type="text/css">
+        .auto-style1 {
+            margin-bottom: 0;
+        }
+    </style>
 </head>
 <body>
    <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
@@ -34,12 +39,25 @@
            
         </div>
         <div>
+            <label for="txtpswd" class="auto-style1">Password:</label>
+            <asp:TextBox ID="txtpswd" runat="server" CssClass="input-text" TextMode="Password"></asp:TextBox>
+            <br />
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="txtpswd" ErrorMessage="Required Password"></asp:RequiredFieldValidator>
+        </div>
+        <div>
+            <label for="txtCPswd">Confirm Password:</label>
+            <asp:TextBox ID="txtCPswd" runat="server" CssClass="input-text" TextMode="Password"></asp:TextBox>
+            <br />
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="txtCPswd" ErrorMessage="Required Confirm Password"></asp:RequiredFieldValidator>
+        &nbsp;<asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="txtpswd" ControlToValidate="txtCPswd" ErrorMessage="Passwords Don't Match"></asp:CompareValidator>
+        </div>
+        <div>
             <label for="txtAddress">Address:</label>
             <asp:TextBox ID="txtAddress" runat="server" CssClass="input-text"></asp:TextBox>
           
             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtAddress" ErrorMessage="Required Address"></asp:RequiredFieldValidator>
           
-        </div>
+        &nbsp;</div>
         <div>
             <label for="txtPhone">Phone Number:</label>
             <asp:TextBox ID="txtPhone" runat="server" CssClass="input-text" MaxLength="10" TextMode="Phone"></asp:TextBox>
