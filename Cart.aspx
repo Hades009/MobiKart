@@ -10,7 +10,7 @@
 <body>
     <form runat="server">
         <header>
-               <h1>Welcome to Mobile Shopping</h1>
+               <h1>Welcome to MobiKart</h1>
                 <nav>
                      <ul>
                         <li><a href="Main.aspx">Home</a></li>
@@ -49,7 +49,7 @@
             </div>
 
             <div class="cart-total">
-                <p>Total: $<asp:Label ID="totalLabel" runat="server" Text="0" /></p>
+                <p>Total: ₹<asp:Label ID="totalLabel" runat="server" Text="0" /></p>
                 <asp:Button ID="checkoutButton" runat="server" Text="Checkout" CssClass="checkout-button" />
             </div>
         </div>

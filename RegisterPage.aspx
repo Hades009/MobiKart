@@ -91,7 +91,7 @@
             <br />
             </label>
 &nbsp;</div>
-            <asp:Button ID="btnRegister" runat="server" Text="Register"  CssClass="btn" />
+            <asp:Button ID="btnRegister" runat="server" Text="Register"  CssClass="btn" OnClick="btnRegister_Click" />
         </div>
     </form>
     

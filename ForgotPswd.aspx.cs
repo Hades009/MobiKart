@@ -45,7 +45,7 @@ namespace MobileShoppingWebsite
         protected void Conf_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\shrey\\source\\repos\\MobiKart\\App_Data\\Database1.mdf;Integrated Security=True");
-            SqlDataAdapter pswd = new SqlDataAdapter("UPDATE RegTable WHERE Password='" + txtPass + "' AND CPassword='" + txtCPass + "'", con);
+            SqlDataAdapter pswd = new SqlDataAdapter("UPDATE RegTable WHERE Email='"+txtEmail.Text+"' AND Password='" + txtPass.Text + "' AND CPassword='" + txtCPass.Text + "'", con);
         }
     }
 }

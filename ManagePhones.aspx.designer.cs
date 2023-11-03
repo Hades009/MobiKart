@@ -11,52 +11,52 @@ namespace MobileShoppingWebsite
 {
 
 
-    public partial class LoginPage
+    public partial class ManagePhones
     {
 
         /// <summary>
-        /// form1 control.
+        /// phoneName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.TextBox phoneName;
 
         /// <summary>
-        /// TextBox1 control.
+        /// phonePrice control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox phonePrice;
 
         /// <summary>
-        /// TextBox2 control.
+        /// addPhoneButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.Button addPhoneButton;
 
         /// <summary>
-        /// DropDownList1 control.
+        /// removePhoneName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.DropDownList removePhoneName;
 
         /// <summary>
-        /// LoginBtn control.
+        /// removePhoneButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button LoginBtn;
+        protected global::System.Web.UI.WebControls.Button removePhoneButton;
     }
 }

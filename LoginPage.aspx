@@ -50,7 +50,7 @@
                 </asp:DropDownList>
             </div>
             <div class="inputBox">
-            <asp:Button runat="server" text="Login" OnClick="Unnamed1_Click1"/>
+                <asp:Button ID="LoginBtn" runat="server" Text="Login" OnClick="LoginBtn_Click" />
             </div>
             <div>
                 <asp:LinkButton runat="server" Font-Names="Calibri" Font-Size="Small" OnClick="ForgotPswdlink_Click">Forgot Password  </asp:LinkButton>
