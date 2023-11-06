@@ -15,7 +15,7 @@
 <body>
    <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
     <form id="registrationForm" runat="server">
-        <h1>Registration Form</h1>
+        <h1>Registration Form </h1>
         <div>
             <label for="txtFirstName">First Name:</label>
             <asp:TextBox ID="txtFirstName" runat="server" CssClass="input-text"></asp:TextBox>
@@ -82,11 +82,11 @@
         <div>
             <label>Gender:
             <asp:Label ID="Label1" runat="server" ForeColor="Black" Text="Male"></asp:Label>
-&nbsp;<asp:RadioButton GroupName="User" ID="RadioButton1" runat="server" />
-&nbsp;<asp:Label ID="Label2" runat="server" ForeColor="Black" Text="Female"></asp:Label>
+            &nbsp;<asp:RadioButton GroupName="User" ID="RadioButton1" runat="server" />
+            &nbsp;<asp:Label ID="Label2" runat="server" ForeColor="Black" Text="Female"></asp:Label>
             <asp:RadioButton GroupName="User" ID="RadioButton2" runat="server" />
             <asp:Label ID="Label3" runat="server" ForeColor="Black" Text="Rather not say"></asp:Label>
-            <asp:RadioButton GroupName="User" ID="RadioButton3" runat="server" />
+            <asp:RadioButton GroupName="User" ID="RadioButton3" runat="server" OnCheckedChanged="RadioButton3_CheckedChanged" />
             <br />
             <br />
             </label>
