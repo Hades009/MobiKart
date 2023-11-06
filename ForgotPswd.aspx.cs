@@ -25,7 +25,7 @@ namespace MobileShoppingWebsite
         protected void Verify_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\shrey\\source\\repos\\MobiKart\\App_Data\\Database1.mdf;Integrated Security=True");
-            SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM RegTable WHERE Email='" + txtUser.Text + "'", con);
+            SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM RegTable WHERE Email='" + txtEmail.Text + "'", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             if (dt.Rows.Count > 0)
@@ -45,8 +45,7 @@ namespace MobileShoppingWebsite
         protected void Conf_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\shrey\\source\\repos\\MobiKart\\App_Data\\Database1.mdf;Integrated Security=True");
-            SqlDataAdapter pswd = new SqlDataAdapter("UPDATE RegTable Password='" + txtPass.Text + "' AND CPassword='" + txtCPass.Text + "' WHERE Name='"+txtUser.Text+"'", con);
-            DataTable dt = new DataTable();
+            SqlDataAdapter pswd = new SqlDataAdapter("UPDATE RegTable WHERE Email='"+txtEmail.Text+"' AND Password='" + txtPass.Text + "' AND CPassword='" + txtCPass.Text + "'", con);
         }
     }
 }

@@ -6,30 +6,26 @@
 <head runat="server">
     <link rel="stylesheet" href="ForgotPswd.css" />
     <title></title>
-    <style type="text/css">
-        .auto-style1 {
-            width: 330px;
-        }
-    </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div class="container">
         <h2>Forgot Password</h2>
-        <p>Enter your username below to reset your password.</p>
+        <p>Enter your email address below to reset your password.</p>
 
         <div>
-            <label for="txtEmail" class="auto-style1">Username:</label>
-            <asp:TextBox ID="txtUser" runat="server" TextMode="Email" CssClass="form-control" required="required"></asp:TextBox>
+            <asp:Label ID="lblMessage" runat="server" ForeColor="Green" Visible="false"></asp:Label>
+            <asp:Label ID="lblError" runat="server" ForeColor="Red" Visible="false"></asp:Label>
+        </div>
+
+        <div>
+            <label for="txtEmail">Email Address:</label>
+            <asp:TextBox ID="txtEmail" runat="server" TextMode="Email" CssClass="form-control" required="required"></asp:TextBox>
         </div>
         <div> 
             <asp:Button ID="Button1" runat="server" class="btnVerify" Text="Verify" />
         </div>
             <div>
-
-        <div>
-            <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Passwords Don't Match" ForeColor="Red"></asp:CompareValidator>
-        </div>
 
             </div>
         <div>
