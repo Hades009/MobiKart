@@ -78,6 +78,31 @@ footer {
         font-size: 1rem;
         color: #888;
     }
+    #AddToCart1 {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    } #AddToCart2 {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    } #AddToCart3 {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
 
     .product-card button {
         background-color: #333;

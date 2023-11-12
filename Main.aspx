@@ -10,12 +10,12 @@
 <body>
     <form id="form1" runat="server">
     <header>
-        <h1>Welcome to Mobile Shopping</h1>
+        <h1>Welcome to MobiKart</h1>
         <nav>
             <ul>
                 <li><a href="Default.aspx">Home</a></li>
-                <li><a href="Products.aspx">Products</a></li>
                 <li><a href="Cart.aspx">Cart</a></li>
+                <li><a href="LoginPage.aspx">Logout</a></li>
             </ul>
         </nav>
     </header>
@@ -28,18 +28,22 @@
                 <asp:Image ID="Image1" runat="server" ImageUrl="~/img/phone1.jpg" />
                 <h3>Samsung S23 Ultra</h3>
                 <p>Price: ₹ 124,999.00</p>
-                <button>Add to Cart</button>
+                <asp:Button ID="AddToCart1" runat="server" Text="Add to Cart" OnClick="AddToCart1_Click"></asp:Button>
             </div>
             <div class="product-card">
                 <asp:Image ID="Image2" runat="server" ImageUrl="~/img/phone2.jpg"/>
                 <h3>Samsung S22</h3>
                 <p>Price:₹52,990.00</p>
-                <button>Add to Cart</button>
+                <asp:Button ID="AddToCart2" runat="server" Text="Add to Cart" OnClick="AddToCart2_Click"></asp:Button>
             </div>
-            <!-- Add more product cards as needed -->
+            <div class="product-card">
+             <asp:Image ID="Image3" runat="server" ImageUrl="~/img/phone3.jpg"/>
+                <h3>iphone 11</h3>
+                <p>Price:₹38,990.00</p>
+                <asp:Button ID="AddToCart3" runat="server" Text="Add to Cart" ></asp:Button>
+            </div>
         </div>
     </div>
-
     <footer>
         <p>&copy; 2023 Mobile Shopping</p>
     </footer>
