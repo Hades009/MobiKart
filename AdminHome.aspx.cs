@@ -19,5 +19,14 @@ namespace MobileShoppingWebsite
             Server.Transfer("LoginPage.aspx");
         }
 
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("Reports.aspx");
+        }
+
+        protected void Button6_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("UserManagement.aspx");
+        }
     }
 }

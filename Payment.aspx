@@ -33,6 +33,9 @@
                 <asp:TextBox runat="server" ID="cvv" CssClass="input-field" placeholder="CVV" ></asp:TextBox>
 
                 <asp:Button runat="server" ID="payButton" Text="Pay Now" CssClass="pay-button"  />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <asp:Button runat="server" ID="cancelButton" Text="Cancel Payment" CssClass="cancel-button"  />
             </div>
         </div>
     </form>

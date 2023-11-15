@@ -12,9 +12,10 @@
            <h1>Welcome to MobiKart</h1>
     <nav>
         <ul>
-            <li><a href="Default.aspx">Home</a></li>
-            <li><a href="Products.aspx">Products</a></li>
-            <li><a href="Cart.aspx">Cart</a></li>
+            <li><a href="AdminHome.aspx">Home</a></li>
+            <li><a href="Reports.aspx">Reports</a></li>
+            <li><a href="UserManagement.aspx">User Management</a></li>
+            <li><a href="LoginPage.aspx">Logout</a></li>
         </ul>
     </nav>
 </header>

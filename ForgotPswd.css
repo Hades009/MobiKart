@@ -24,13 +24,6 @@ label {
     display: block;
     margin-bottom: 10px;
 }
-
-input[type="email"] {
-    width: 80%;
-    padding: 10px;
-    margin-bottom: 4px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
 }
 #txtPass {
     width: 80%;

@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <link rel="stylesheet" type="text/css" href="ManagePhones.css" />
 <style type="text/css">
         .auto-style3 {
             width: 100%;
@@ -71,6 +72,9 @@
     </style>
     </head>
     <body>
+    <header>
+           <h1>Welcome to MobiKart</h1>
+    </header>
     <form id="form1" runat="server">
         <table class="auto-style3">
             <tr>
@@ -97,7 +101,7 @@
                     <asp:Image ID="Image5" runat="server" Height="171px" ImageUrl="~/img/user-data-icon.png" Width="281px" />
                     <br />
                     <br />
-                    <asp:Button ID="Button6" class="genbutton" runat="server" Text="User Data" Font-Names="Verdana" Font-Size="Medium" />
+                    <asp:Button ID="Button6" class="genbutton" runat="server" Text="User Data" Font-Names="Verdana" Font-Size="Medium" OnClick="Button6_Click" />
                 </td>
             </tr>
             <tr>
@@ -107,7 +111,7 @@
                     <br />
                     <br />
                     <br />
-                    <asp:Button ID="Button3" runat="server" Text="View Booking Reports" CssClass="auto-style11" Font-Names="Verdana" Font-Size="Medium" Width="233px" />
+                    <asp:Button ID="Button3" runat="server" Text="View Booking Reports" CssClass="auto-style11" Font-Names="Verdana" Font-Size="Medium" Width="233px" OnClick="Button3_Click" />
                     <br />
                     <br />
                 </td>

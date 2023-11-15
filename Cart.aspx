@@ -22,7 +22,6 @@
         <div class="container">
             <h2>Shopping Cart</h2>
             <div class="cart-items">
-                <!-- Cart items go here -->
                 <div class="cart-item">
                     <asp:Image ID="Image1" runat="server" ImageUrl="~/img/phone1.jpg" />
                      <h3>Samsung S23 Ultra</h3>
@@ -44,8 +43,7 @@
                     </div>
                     <p class="subtotal">Subtotal:₹52,990.00</p>
                     <asp:Button ID="removeButton2" runat="server" Text="Remove" CssClass="remove-button" />
-                </div>
-                 Add more cart items as needed -->
+                </div>-->
             </div>
 
             <div class="cart-total">

@@ -72,3 +72,16 @@ nav a {
     .pay-button:hover {
         background-color: #555;
     }
+
+.cancel-button {
+    background-color: #fc3434;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+    .cancel-button:hover {
+        background-color: #ff6a6a;
+    }

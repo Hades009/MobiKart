@@ -21,11 +21,13 @@ namespace MobileShoppingWebsite
             txtCPass.Visible= false;
             Conf.Visible= false;
         }
+            
+        
 
-        protected void Verify_Click(object sender, EventArgs e)
+        protected void Button1_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Noel\\source\\repos\\MobileShoppingWebsite\\App_Data\\Database1.mdf;Integrated Security=True");
-            SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM RegTable WHERE Email='" + txtEmail.Text + "'", con);
+            SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM RegTable WHERE Username='" + txtUser.Text + "'", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             if (dt.Rows.Count > 0)
@@ -44,7 +46,12 @@ namespace MobileShoppingWebsite
 
         protected void Conf_Click(object sender, EventArgs e)
         {
-            
+            SqlConnection conn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Noel\\source\\repos\\MobileShoppingWebsite\\App_Data\\Database1.mdf;Integrated Security=True");
+            conn.Open();
+            SqlDataAdapter sdaa = new SqlDataAdapter("UPDATE RegTable SET Password ='"+Npass.Text+"', CPassword = '"+CNpass.Text+"' WHERE Username='" + txtUser.Text + "'", conn);
+            conn.Close();
+            Response.Write("<script>alert('Password changed successfully!')</script>");
+            Response.Redirect("LoginPage.aspx");
         }
     }
 }

@@ -13,7 +13,7 @@
         <h1>Welcome to MobiKart</h1>
         <nav>
             <ul>
-                <li><a href="Default.aspx">Home</a></li>
+                <li><a href="Main.aspx">Home</a></li>
                 <li><a href="Cart.aspx">Cart</a></li>
                 <li><a href="LoginPage.aspx">Logout</a></li>
             </ul>
