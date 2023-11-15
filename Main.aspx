@@ -26,8 +26,12 @@
             <!-- Product cards go here -->
             <div class="product-card">
                 <asp:Image ID="Image1" runat="server" ImageUrl="~/img/phone1.jpg" />
-                <h3>Samsung S23 Ultra</h3>
-                <p>Price: ₹ 124,999.00</p>
+                <h3>
+                    <asp:Label ID="Label2" runat="server" Text="Samsung S23 Ultra"></asp:Label>
+                </h3>
+                <p>
+                    <asp:Label ID="Label1" runat="server" Text="Price: ₹ 124,999.00"></asp:Label>
+                </p>
                 <asp:Button ID="AddToCart1" runat="server" Text="Add to Cart" OnClick="AddToCart1_Click"></asp:Button>
             </div>
             <div class="product-card">

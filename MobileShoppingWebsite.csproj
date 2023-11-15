@@ -86,6 +86,7 @@
     <Content Include="LoginPage.aspx" />
     <Content Include="Main.aspx" />
     <Content Include="Main.css" />
+    <Content Include="Usermgmt.css" />
     <Content Include="ManagePhones.aspx" />
     <Content Include="ManagePhones.css" />
     <Content Include="Payment.aspx" />
