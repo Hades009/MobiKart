@@ -47,7 +47,7 @@
             </div>
 
             <div class="cart-total">
-                <p>Total: ₹<asp:Label ID="totalLabel" runat="server" Text="0" /></p>
+                <p>&nbsp;</p>
                 <asp:Button ID="checkoutButton" runat="server" Text="Checkout" CssClass="checkout-button" OnClick="checkoutButton_Click" />
             </div>
         </div>

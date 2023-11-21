@@ -28,5 +28,10 @@ namespace MobileShoppingWebsite
         {
             Server.Transfer("UserManagement.aspx");
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("ManagePhones.aspx");
+        }
     }
 }

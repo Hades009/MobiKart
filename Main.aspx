@@ -44,7 +44,7 @@
              <asp:Image ID="Image3" runat="server" ImageUrl="~/img/phone3.jpg"/>
                 <h3>iphone 11</h3>
                 <p>Price:₹38,990.00</p>
-                <asp:Button ID="AddToCart3" runat="server" Text="Add to Cart" ></asp:Button>
+                <asp:Button ID="AddToCart3" runat="server" Text="Add to Cart" OnClick="AddToCart3_Click" ></asp:Button>
             </div>
         </div>
     </div>

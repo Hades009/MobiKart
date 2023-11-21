@@ -89,7 +89,7 @@
                     <asp:Image ID="Image1" runat="server" Height="226px" ImageAlign="Middle" ImageUrl="~/img/cell-phone-icon.png" Width="135px" />
                     <br />
                     <br />
-                    <asp:Button ID="Button1" runat="server" class="genbutton" Text="Manage Phones" CssClass="genbutton" Font-Names="Verdana" Font-Size="Medium" />
+                    <asp:Button ID="Button1" runat="server" class="genbutton" Text="Manage Phones" CssClass="genbutton" Font-Names="Verdana" Font-Size="Medium" OnClick="Button1_Click" />
                     <br />
                     <br />
                     <br />

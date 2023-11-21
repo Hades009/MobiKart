@@ -53,11 +53,11 @@
 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-
+            <center>
             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" ForeColor="Black">
                 <Columns>
-                    <asp:BoundField DataField="FName" HeaderText="FName" SortExpression="FName" />
-                    <asp:BoundField DataField="LName" HeaderText="LName" SortExpression="LName" />
+                    <asp:BoundField DataField="First Name" HeaderText="First Name" SortExpression="First Name" />
+                    <asp:BoundField DataField="Last Name" HeaderText="Last Name" SortExpression="Last Name" />
                     <asp:BoundField DataField="Username" HeaderText="Username" SortExpression="Username" />
                     <asp:BoundField DataField="Password" HeaderText="Password" SortExpression="Password" />
                     <asp:BoundField DataField="CPassword" HeaderText="CPassword" SortExpression="CPassword" />
@@ -78,7 +78,8 @@
                 <SortedDescendingHeaderStyle BackColor="#383838" />
             </asp:GridView>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [RegTable]"></asp:SqlDataSource>
-        </div>        
+        </center>
+       </div>        
     </form>
 </body>
 </html>

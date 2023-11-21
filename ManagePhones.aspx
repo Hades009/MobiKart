@@ -19,7 +19,7 @@
         </ul>
     </nav>
 </header>
-
+    <form runat="server">
     <div class="container">
         <h2>Manage Phone Stock</h2>
         <div class="add-phone-form">
@@ -36,15 +36,7 @@
         </div>
 
         <div class="remove-phone-form">
-            <h3>Remove a Phone</h3>
-            <div class="form-group">
-                <label for="removePhoneName">Phone Name:</label>
-                <asp:DropDownList ID="removePhoneName" runat="server" CssClass="form-input" />
-            </div>
-            <asp:Button ID="removePhoneButton" runat="server" Text="Remove Phone" CssClass="admin-button" />
-        </div>
-    </div>
-
+    </form>
     <footer>
     <p>&copy; 2023 Mobile Shopping</p>   
 
