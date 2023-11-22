@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -17,6 +18,31 @@ namespace MobileShoppingWebsite
         protected void checkoutButton_Click(object sender, EventArgs e)
         {
             Server.Transfer("Payment.aspx");
+        }
+
+        protected void removeButton1_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Noel\\source\\repos\\MobileShoppingWebsite\\App_Data\\Database1.mdf;Integrated Security=True");
+            SqlCommand cmd = new SqlCommand("DELETE FROM Cart");
+            SqlCommand q = new SqlCommand("SELECT * FROM Cart");
+            con.Open();
+            SqlDataReader sdr = q.ExecuteReader();
+            int count = 0;
+            while (sdr.Read())
+            {
+                count++;
+            }
+            con.Close();
+            if (count == 0)
+            {
+                Response.Write("<script>alert('Cart Empty!')</script>");
+            }
+            else
+            {
+                con.Open();
+                cmd.ExecuteNonQuery();
+                Response.Write("<script>alert('Cart Cleared!')</script>");
+            }
         }
     }
 }

@@ -31,7 +31,7 @@
                         <asp:TextBox ID="quantity1" runat="server" Text="1" CssClass="quantity-input" />
                     </div>-->
                     <p class="subtotal">Subtotal: ₹124,999.00</p>
-                    <asp:Button ID="removeButton1" runat="server" Text="Remove" CssClass="remove-button"  />
+                    <asp:Button ID="removeButton1" runat="server" Text="Remove" CssClass="remove-button" OnClick="removeButton1_Click"  />
                 </div>
                 <!--<div class="cart-item">
                     <asp:Image ID="Image2" runat="server" ImageUrl="~/img/phone2.jpg"/>

@@ -29,12 +29,12 @@
                 <asp:TextBox ID="phoneName" runat="server" CssClass="form-input" />
             </div>
             <div class="form-group">
-                <label for="phonePrice">Price:</label>
+                Quantity<label for="phonePrice">:</label>
                 <asp:TextBox ID="phonePrice" runat="server" CssClass="form-input" />
             </div>
-            <asp:Button ID="addPhoneButton" runat="server" Text="Add Phone"  CssClass="admin-button" />
+            <asp:Button ID="addPhoneButton" runat="server" Text="Add Phone"  CssClass="admin-button" OnClick="addPhoneButton_Click" />
         </div>
-
+        </div>
         <div class="remove-phone-form">
     </form>
     <footer>
