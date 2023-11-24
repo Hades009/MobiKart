@@ -6,6 +6,9 @@ body, h1, h2, ul {
 
 /* Basic styling */
 body {
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
 }
@@ -120,6 +123,7 @@ nav a {
         background-color: #555;
     }
 footer {
+    margin-top:auto;
     text-align: center;
     padding: 10px;
     background-color: #333;
