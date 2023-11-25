@@ -53,7 +53,12 @@ footer {
 }
 
 .form-input {
-    width: 100%;
+    width: 10%;
+    padding: 10px;
+    font-size: 1rem;
+
+}.delete-input {
+    width: 30%;
     padding: 10px;
     font-size: 1rem;
 }
@@ -62,6 +67,7 @@ footer {
     background-color: #333;
     color: #fff;
     border: none;
+    border-radius:10px;
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -70,3 +76,60 @@ footer {
     .admin-button:hover {
         background-color: #555;
     }
+.select {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 55%;
+}
+    .select select {
+        font-family: 'Arial';
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        padding: 11px 16px;
+        outline: 0;
+        border: 0px solid #000000;
+        border-radius: 10px;
+        background: #e6e6e6;
+        color: #7b7b7b;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+        .select select::-ms-expand {
+            display: none;
+        }
+
+        .select select:hover,
+            .select select:focus {
+                color: #000000;
+                background: #cccccc;
+            }
+
+            .select select:disabled {
+                opacity: 0.5;
+                pointer-events: none;
+            }
+.select_arrow {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    width: 0px;
+    height: 0px;
+    border: solid #7b7b7b;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.select select:hover ~ .select_arrow,
+.select select:focus ~ .select_arrow {
+    border-color: #000000;
+}
+
+.select select:disabled ~ .select_arrow {
+    border-top-color: #cccccc;
+}

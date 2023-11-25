@@ -23,22 +23,35 @@
     <div class="container">
         <h2>Manage Phone Stock</h2>
         <div class="add-phone-form">
-            <h3>Add a New Phone</h3>
+            <h3>Add Stock</h3>
             <div class="form-group">
-                <label for="phoneName">Phone Name:</label>
-                <asp:TextBox ID="phoneName" runat="server" CssClass="form-input" />
+                <label for="phoneName">Phone Name:<br />
+                </label>
+                <asp:DropDownList ID="DropDownList1" runat="server" class="select" DataSourceID="SqlDataSource2" DataTextField="ModelName" DataValueField="ModelName"></asp:DropDownList>
+                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [ModelName] FROM [Stock]"></asp:SqlDataSource>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [ModelName] AS Model_Name FROM [Stock]"></asp:SqlDataSource>
             </div>
             <div class="form-group">
                 Quantity<label for="phonePrice">:</label>
                 <asp:TextBox ID="phonePrice" runat="server" CssClass="form-input" />
             </div>
-            <asp:Button ID="addPhoneButton" runat="server" Text="Add Phone"  CssClass="admin-button" OnClick="addPhoneButton_Click" />
+            <asp:Button ID="addPhoneButton" runat="server" Text="Update"  CssClass="admin-button" OnClick="addPhoneButton_Click" CausesValidation="False" />
+            </div>
+            <div class="add-phone-form">
+                <h3>&nbsp;</h3>
+
+                <h3>Delete Stocks</h3>
+                <div class="form-group">
+                    <label for="phonename">Phone Name:</label>&nbsp;<asp:TextBox ID="DeleteInput" runat="server" CssClass="delete-input"></asp:TextBox>
+                </div>
+                <div>
+                    <asp:Button ID="Delete" runat="server" CausesValidation="False" CssClass="admin-button" OnClick="Delete_Click" Text="Delete" />
+                </div>
+            </div>
         </div>
-        </div>
-        <div class="remove-phone-form">
     </form>
     <footer>
-    <p>&copy; 2023 Mobile Shopping</p>   
+    <p>&copy; 2023 MobiKart</p>   
 
     </footer>
 </body>
