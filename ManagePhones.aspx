@@ -29,7 +29,7 @@
                 </label>
                 <asp:DropDownList ID="DropDownList1" runat="server" class="select" DataSourceID="SqlDataSource2" DataTextField="ModelName" DataValueField="ModelName"></asp:DropDownList>
                 <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [ModelName] FROM [Stock]"></asp:SqlDataSource>
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [ModelName] AS Model_Name FROM [Stock]"></asp:SqlDataSource>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Stock]"></asp:SqlDataSource>
             </div>
             <div class="form-group">
                 Quantity<label for="phonePrice">:</label>
@@ -46,7 +46,28 @@
                 </div>
                 <div>
                     <asp:Button ID="Delete" runat="server" CausesValidation="False" CssClass="admin-button" OnClick="Delete_Click" Text="Delete" />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
                 </div>
+                <center>
+<asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" DataSourceID="SqlDataSource1" ForeColor="Black" GridLines="Vertical">
+    <AlternatingRowStyle BackColor="#CCCCCC" />
+    <Columns>
+        <asp:BoundField DataField="ModelName" HeaderText="ModelName" SortExpression="ModelName" />
+        <asp:BoundField DataField="Quantity" HeaderText="Quantity" SortExpression="Quantity" />
+    </Columns>
+    <FooterStyle BackColor="#CCCCCC" />
+    <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+    <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
+    <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
+    <SortedAscendingCellStyle BackColor="#F1F1F1" />
+    <SortedAscendingHeaderStyle BackColor="#808080" />
+    <SortedDescendingCellStyle BackColor="#CAC9C9" />
+    <SortedDescendingHeaderStyle BackColor="#383838" />
+</asp:GridView>
+</center>
             </div>
         </div>
     </form>

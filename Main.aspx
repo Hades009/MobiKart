@@ -27,28 +27,35 @@
             <div class="product-card">
                 <asp:Image ID="Image1" runat="server" ImageUrl="~/img/phone1.jpg" />
                 <h3>
-                    <asp:Label ID="Label2" runat="server" Text="Samsung S23 Ultra"></asp:Label>
+                    <asp:Label ID="Phone1" runat="server" Text="Samsung S23 Ultra"></asp:Label>
                 </h3>
                 <p>
-                    <asp:Label ID="Label1" runat="server" Text="Price: ₹ 124,999.00"></asp:Label>
+                    Price: ₹
+                    <asp:Label ID="Phone1Price" runat="server" Text="124,999.00"></asp:Label>
                 </p>
                 <asp:Button ID="AddToCart1" runat="server" Text="Add to Cart" OnClick="AddToCart1_Click"></asp:Button>
             </div>
             <div class="product-card">
                 <asp:Image ID="Image2" runat="server" ImageUrl="~/img/phone2.jpg"/>
-                <h3>Samsung S22</h3>
-                <p>Price:₹52,990.00</p>
+                <h3>
+                    <asp:Label ID="Phone2" runat="server" Text="Samsung S22"></asp:Label>
+                </h3>
+                <p>Price:₹<asp:Label ID="Phone2Price" runat="server" Text="52,990.00"></asp:Label>
+                </p>
                 <asp:Button ID="AddToCart2" runat="server" Text="Add to Cart" OnClick="AddToCart2_Click"></asp:Button>
             </div>
             <div class="product-card">
              <asp:Image ID="Image3" runat="server" ImageUrl="~/img/phone3.jpg"/>
-                <h3>iphone 11</h3>
-                <p>Price:₹38,990.00</p>
+                <h3>
+                    <asp:Label ID="Phone3" runat="server" Text="IPhone 11"></asp:Label>
+                </h3>
+                <p>Price:₹.<asp:Label ID="Phone3Price" runat="server" Text="38,990.00"></asp:Label>
+                </p>
                 <asp:Button ID="AddToCart3" runat="server" Text="Add to Cart" OnClick="AddToCart3_Click" ></asp:Button>
             </div>
         </div>
     </div>
-    <footer>
+    <footer class=".foot">
         <p>&copy; 2023 Mobile Shopping</p>
     </footer>
     </form>

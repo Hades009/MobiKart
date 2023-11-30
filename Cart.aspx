@@ -28,7 +28,7 @@
                     <asp:GridView ID="gv" runat="server" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Height="232px" OnSelectedIndexChanged="gv_SelectedIndexChanged" Width="531px">
                         <AlternatingRowStyle BackColor="#CCCCCC" />
                         <Columns>
-                            <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
+                            <asp:BoundField DataField="ModelName" HeaderText="ModelName" SortExpression="ModelName" />
                             <asp:BoundField DataField="Price" HeaderText="Price" SortExpression="Price" />
                         </Columns>
                         <FooterStyle BackColor="#CCCCCC" />

@@ -33,22 +33,22 @@ namespace MobileShoppingWebsite
         protected global::System.Web.UI.WebControls.Image Image1;
 
         /// <summary>
-        /// Label2 control.
+        /// Phone1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label Phone1;
 
         /// <summary>
-        /// Label1 control.
+        /// Phone1Price control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label Phone1Price;
 
         /// <summary>
         /// AddToCart1 control.
@@ -69,6 +69,24 @@ namespace MobileShoppingWebsite
         protected global::System.Web.UI.WebControls.Image Image2;
 
         /// <summary>
+        /// Phone2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Phone2;
+
+        /// <summary>
+        /// Phone2Price control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Phone2Price;
+
+        /// <summary>
         /// AddToCart2 control.
         /// </summary>
         /// <remarks>
@@ -85,6 +103,24 @@ namespace MobileShoppingWebsite
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image Image3;
+
+        /// <summary>
+        /// Phone3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Phone3;
+
+        /// <summary>
+        /// Phone3Price control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Phone3Price;
 
         /// <summary>
         /// AddToCart3 control.

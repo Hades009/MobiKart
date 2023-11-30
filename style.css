@@ -1,5 +1,9 @@
 ﻿
 body {
+    background-image: url('bgimage.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     margin: 0;
     padding: 0;
     background: #808080;
@@ -9,7 +13,7 @@ body {
 .LoginBox {
     position: absolute;
     top: 50%;
-    left: 67%;
+    left: 90%;
     transform: translate(-50%,-50%);
     width: 350px;
     min-height: 220px;

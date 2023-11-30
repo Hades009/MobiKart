@@ -73,10 +73,16 @@
     <Content Include="App_Data\Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <Content Include="App_Data\Database2.mdf" />
+    <Content Include="App_Data\Database2_log.ldf">
+      <DependentUpon>Database2.mdf</DependentUpon>
+    </Content>
     <Content Include="Cart.aspx" />
     <Content Include="Cart.css" />
     <Content Include="ForgotPswd.aspx" />
     <Content Include="ForgotPswd.css" />
+    <Content Include="bgimage.jpg" />
+    <Content Include="img\bgfrgt.jpg" />
     <Content Include="img\cell-phone-icon.png" />
     <Content Include="img\phone1.jpg" />
     <Content Include="img\phone2.jpg" />

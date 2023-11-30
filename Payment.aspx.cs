@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
@@ -12,45 +13,31 @@ namespace MobileShoppingWebsite
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-          
+
         }
 
         protected void cancelButton_Click(object sender, EventArgs e)
         {
             Response.Write("<script>alert('Are you sure?')</script>");
             Response.Write("<script>alert('Booking cancelled successfully!')</script>");
+            Server.Transfer("Cart.aspx");
         }
 
         protected void payButton_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = C:\\Users\\Noel\\source\\repos\\MobileShoppingWebsite\\App_Data\\Database1.mdf; Integrated Security = True");
-            SqlCommand q = new SqlCommand("SELECT * FROM Payment WHERE Card Number = '"+cardNumber.Text+"'",con);
+            string model = Session["model"].ToString();
+            int i = 1;
+            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Noel Joseph\\source\\repos\\MobileShoppingWebsite\\App_Data\\Database1.mdf\";Integrated Security=True");
             con.Open();
-            SqlDataReader sdr = q.ExecuteReader();
-            int count = 0;
-            while (sdr.Read())
-            {
-                count++;
-            }
+            SqlCommand cmdo = new SqlCommand(@"INSERT INTO [dbo].[Payment]([CardNumber],[Exp],[CVV]) Values ('" +cardNumber.Text + "','" + expiryDate.Text + "','" + cvv.Text + "')", con);
+            SqlCommand cmds = new SqlCommand(@"UPDATE Stock SET Quantity = Quantity - '" + i + "' WHERE ModelName = '" + model + "'", con);
+            SqlCommand clear = new SqlCommand("DELETE FROM Cart", con);
+            cmdo.ExecuteNonQuery();
+            clear.ExecuteNonQuery();
+            cmds.ExecuteNonQuery();
             con.Close();
-            if (count > 0)
-            {
-                Response.Write("<script>alert('Card already exists')</script>");
-
-            }
-            else
-            {
-                con.Open();
-                SqlCommand cmdo = new SqlCommand("@INSERT INTO [dbo].[Payment]([Card Number],[Exp],[CVV]) Values ('" +cardNumber.Text + "','" + expiryDate.Text + "','" + cvv.Text + "')", con);
-                SqlCommand book = new SqlCommand("SELECT * INTO Booking FROM Cart", con);
-                SqlCommand clear = new SqlCommand("DELETE FROM Cart", con);
-                cmdo.ExecuteNonQuery();
-                book.ExecuteNonQuery();
-                clear.ExecuteNonQuery();
-                con.Close();
-                Response.Write("<script>alert('Mobile booked successfully!')</script>");
-            }
-            
-        }
+            Response.Write("<script>alert('Mobile booked successfully!')</script>");
+            Server.Transfer("Cart.aspx");
+        }    
     }
 }

@@ -13,7 +13,7 @@ namespace MobileShoppingWebsite
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+             
         }
 
         protected void Unnamed3_Click(object sender, EventArgs e)
@@ -27,7 +27,8 @@ namespace MobileShoppingWebsite
         }
         protected void LoginBtn_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\shrey\\source\\repos\\MobiKart\\App_Data\\Database1.mdf;Integrated Security=True");
+            Session["name"] = TextBox1.Text;
+            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Noel Joseph\\source\\repos\\MobileShoppingWebsite\\App_Data\\Database1.mdf\";Integrated Security=True");
             SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM Login WHERE Username='" + TextBox1.Text + "' AND Password = '" + TextBox2.Text + "' AND UserType = '" + DropDownList1.SelectedItem.ToString() + "'", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
