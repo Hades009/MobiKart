@@ -32,7 +32,7 @@
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" DataSourceID="SqlDataSource1" ForeColor="Black">
             <Columns>
                 <asp:BoundField DataField="ModelName" HeaderText="ModelName" SortExpression="ModelName" />
-                <asp:BoundField DataField="Price " HeaderText="Price " SortExpression="Price " />
+                <asp:BoundField DataField="Price_" HeaderText="Price_" SortExpression="Price_" />
                 <asp:BoundField DataField="User" HeaderText="User" SortExpression="User" />
             </Columns>
             <FooterStyle BackColor="#CCCCCC" />
@@ -45,7 +45,7 @@
             <SortedDescendingCellStyle BackColor="#CAC9C9" />
             <SortedDescendingHeaderStyle BackColor="#383838" />
         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Booking]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [ModelName], [Price ] AS Price_, [User] FROM [Booking]"></asp:SqlDataSource>
         </center> 
         </div>
    </form>

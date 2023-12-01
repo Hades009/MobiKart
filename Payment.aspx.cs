@@ -18,6 +18,11 @@ namespace MobileShoppingWebsite
 
         protected void cancelButton_Click(object sender, EventArgs e)
         {
+            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\shrey\\source\\repos\\MobiKart\\App_Data\\Database1.mdf;Integrated Security=True");
+            SqlCommand cmd = new SqlCommand("DELETE From Booking WHERE Timestamp = (Select MAX(Timestamp) FROM Booking)",con);
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
             Response.Write("<script>alert('Are you sure?')</script>");
             Response.Write("<script>alert('Booking cancelled successfully!')</script>");
             Server.Transfer("Cart.aspx");
