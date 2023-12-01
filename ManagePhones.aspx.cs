@@ -25,7 +25,7 @@ namespace MobileShoppingWebsite
             }
             if (!string.IsNullOrWhiteSpace(textboxValue) && Int32.TryParse(textboxValue, out int i))
             {
-                SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Noel Joseph\\source\\repos\\MobileShoppingWebsite\\App_Data\\Database1.mdf\";Integrated Security=True");
+                SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\shrey\\source\\repos\\MobiKart\\App_Data\\Database1.mdf;Integrated Security=True");
                 SqlCommand cmds = new SqlCommand(@"UPDATE Stock SET Quantity = Quantity + '" + textboxValue + "' WHERE ModelName = '" + DropDownList1.SelectedItem.ToString() + "'", con);
                 con.Open();
                 cmds.ExecuteNonQuery();
@@ -40,7 +40,7 @@ namespace MobileShoppingWebsite
         protected void Delete_Click(object sender, EventArgs e)
         {
             //String model = DeletePhone.Text;
-            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Noel Joseph\\source\\repos\\MobileShoppingWebsite\\App_Data\\Database1.mdf\";Integrated Security=True");
+            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\shrey\\source\\repos\\MobiKart\\App_Data\\Database1.mdf;Integrated Security=True");
             SqlDataAdapter cmd = new SqlDataAdapter("SELECT * FROM Stock WHERE ModelName = '" + DeleteInput.Text + "'", con);
             DataTable dt = new DataTable();
             cmd.Fill(dt);
@@ -50,7 +50,7 @@ namespace MobileShoppingWebsite
             }
             else
             {
-                SqlConnection conn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Noel Joseph\\source\\repos\\MobileShoppingWebsite\\App_Data\\Database1.mdf\";Integrated Security=True");
+                SqlConnection conn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\shrey\\source\\repos\\MobiKart\\App_Data\\Database1.mdf;Integrated Security=True");
                 SqlCommand cmdo = new SqlCommand("DELETE FROM Stock WHERE ModelName = '" + DeleteInput.Text + "'", conn);
                 conn.Open();
                 cmdo.ExecuteNonQuery();

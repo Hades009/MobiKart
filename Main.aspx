@@ -55,9 +55,9 @@
             </div>
         </div>
     </div>
-    <footer class=".foot">
-        <p>&copy; 2023 Mobile Shopping</p>
-    </footer>
     </form>
+    <footer>
+       <p>&copy; 2023 MobiKart</p>
+    </footer>
 </body>
 </html>

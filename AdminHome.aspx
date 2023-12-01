@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <link rel="stylesheet" type="text/css" href="ManagePhones.css" />
+    <link rel="stylesheet" type="text/css" href="Adminstyle.css" />
 <style type="text/css">
         .auto-style3 {
             width: 100%;
@@ -118,5 +118,9 @@
             </tr>
         </table>
     </form>
+
+   <footer>
+         <p>&copy; 2023 MobiKart</p>
+    </footer>
 </body>
 </html>

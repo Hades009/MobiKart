@@ -1,4 +1,6 @@
 ﻿body {
+    margin: 0;
+    padding: 0;
 }
 header {
     background-color: #333;
@@ -21,5 +23,14 @@ nav ul {
 
 nav a {
     text-decoration: none;
+    color: #fff;
+}
+footer {
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
     color: #fff;
 }

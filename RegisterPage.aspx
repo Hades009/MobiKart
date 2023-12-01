@@ -12,7 +12,7 @@
         }
     </style>
 </head>
-<body>
+<body style="background-image: url('bgforgot.jpg'); background-repeat:no-repeat">
    <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
     <form id="registrationForm" runat="server">
         <h1>Registration Form</h1>

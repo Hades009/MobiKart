@@ -42,14 +42,6 @@ nav a {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.foot {
-    margin-top: auto;
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-}
-
 /* Product card styles */
 .product-grid {
     display: grid;
@@ -118,3 +110,14 @@ nav a {
         .product-card button:hover {
             background-color: #555;
         }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}

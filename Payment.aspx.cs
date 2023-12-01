@@ -27,7 +27,7 @@ namespace MobileShoppingWebsite
         {
             string model = Session["model"].ToString();
             int i = 1;
-            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Noel Joseph\\source\\repos\\MobileShoppingWebsite\\App_Data\\Database1.mdf\";Integrated Security=True");
+            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\shrey\\source\\repos\\MobiKart\\App_Data\\Database1.mdf;Integrated Security=True");
             con.Open();
             SqlCommand cmdo = new SqlCommand(@"INSERT INTO [dbo].[Payment]([CardNumber],[Exp],[CVV]) Values ('" +cardNumber.Text + "','" + expiryDate.Text + "','" + cvv.Text + "')", con);
             SqlCommand cmds = new SqlCommand(@"UPDATE Stock SET Quantity = Quantity - '" + i + "' WHERE ModelName = '" + model + "'", con);

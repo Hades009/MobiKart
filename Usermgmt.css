@@ -33,12 +33,6 @@ nav a {
     text-decoration: none;
     color: #fff;
 }
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-}
 .container {
     max-width: 960px;
     margin: 20px auto;
@@ -78,4 +72,15 @@ footer {
     width: 70%;
     height: 70%;
     padding: 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
 }

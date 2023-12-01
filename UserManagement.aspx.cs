@@ -18,7 +18,7 @@ namespace MobileShoppingWebsite
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Noel Joseph\\source\\repos\\MobileShoppingWebsite\\App_Data\\Database1.mdf\";Integrated Security=True");
+            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\shrey\\source\\repos\\MobiKart\\App_Data\\Database1.mdf;Integrated Security=True");
             SqlDataAdapter cmd = new SqlDataAdapter("SELECT * FROM RegTable WHERE Username = '" + UserTxt.Text + "'", con);
             DataTable dt = new DataTable();
             cmd.Fill(dt);
@@ -28,7 +28,7 @@ namespace MobileShoppingWebsite
             }
             else
             {
-                SqlConnection conn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Noel Joseph\\source\\repos\\MobileShoppingWebsite\\App_Data\\Database1.mdf\";Integrated Security=True");
+                SqlConnection conn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\shrey\\source\\repos\\MobiKart\\App_Data\\Database1.mdf;Integrated Security=True");
                 SqlCommand cmdo = new SqlCommand("DELETE FROM RegTable WHERE Username = '" + UserTxt.Text + "'", conn);
                 conn.Open();
                 cmdo.ExecuteNonQuery();

@@ -26,7 +26,7 @@ namespace MobileShoppingWebsite
 
         protected void checkoutButton_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Noel Joseph\\source\\repos\\MobileShoppingWebsite\\App_Data\\Database1.mdf\";Integrated Security=True");
+            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\shrey\\source\\repos\\MobiKart\\App_Data\\Database1.mdf;Integrated Security=True");
             SqlCommand q = new SqlCommand("SELECT * FROM Cart", con);
             con.Open();
             SqlDataReader sdr = q.ExecuteReader();
@@ -49,7 +49,7 @@ namespace MobileShoppingWebsite
         protected void removeButton1_Click(object sender, EventArgs e)
         {
             
-            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Noel Joseph\\source\\repos\\MobileShoppingWebsite\\App_Data\\Database1.mdf\";Integrated Security=True");
+            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\shrey\\source\\repos\\MobiKart\\App_Data\\Database1.mdf;Integrated Security=True");
             SqlCommand cmd = new SqlCommand("DELETE FROM Cart",con);
             SqlCommand q = new SqlCommand("SELECT * FROM Cart",con);
             con.Open();

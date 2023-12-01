@@ -20,7 +20,7 @@ namespace MobileShoppingWebsite
         {
             string myVar = Session["name"].ToString();
             Session["model"] = Phone1.Text;
-            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Noel Joseph\\source\\repos\\MobileShoppingWebsite\\App_Data\\Database1.mdf\";Integrated Security=True");
+            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\shrey\\source\\repos\\MobiKart\\App_Data\\Database1.mdf;Integrated Security=True");
             SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM Stock WHERE ModelName = '" + Phone1.Text + "'", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
@@ -30,7 +30,7 @@ namespace MobileShoppingWebsite
             }
             else
             {
-                SqlConnection conn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Noel Joseph\\source\\repos\\MobileShoppingWebsite\\App_Data\\Database1.mdf\";Integrated Security=True");
+                SqlConnection conn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\shrey\\source\\repos\\MobiKart\\App_Data\\Database1.mdf;Integrated Security=True");
                 SqlCommand cmd = new SqlCommand(@"INSERT INTO [dbo].[Cart]([ModelName],[Price]) VALUES ('" + Phone1.Text + "', '" + Phone1Price.Text + "')", conn);
                 SqlCommand cmdo = new SqlCommand(@"INSERT INTO [dbo].[Booking]([ModelName],[Price],[User]) VALUES ('" + Phone1.Text + "', '" + Phone1Price.Text + "','"+myVar+"')", conn);
                 conn.Open();
@@ -45,7 +45,7 @@ namespace MobileShoppingWebsite
         {
             string myVar = Session["name"].ToString();
             Session["model"] = Phone2.Text;
-            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Noel Joseph\\source\\repos\\MobileShoppingWebsite\\App_Data\\Database1.mdf\";Integrated Security=True");
+            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\shrey\\source\\repos\\MobiKart\\App_Data\\Database1.mdf;Integrated Security=True");
             SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM Stock WHERE ModelName = '" + Phone2.Text + "'", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
@@ -55,7 +55,7 @@ namespace MobileShoppingWebsite
             }
             else
             {
-                SqlConnection conn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Noel Joseph\\source\\repos\\MobileShoppingWebsite\\App_Data\\Database1.mdf\";Integrated Security=True");
+                SqlConnection conn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\shrey\\source\\repos\\MobiKart\\App_Data\\Database1.mdf;Integrated Security=True");
                 SqlCommand cmd = new SqlCommand(@"INSERT INTO [dbo].[Cart]([ModelName],[Price]) VALUES ('"+Phone2.Text+"', '"+Phone2Price.Text+"')", conn);
                 SqlCommand cmdo = new SqlCommand(@"INSERT INTO [dbo].[Booking]([ModelName],[Price],[User]) VALUES ('" + Phone2.Text + "', '" + Phone2Price.Text + "','" + myVar + "')", conn);
                 conn.Open();
@@ -70,7 +70,7 @@ namespace MobileShoppingWebsite
         {
             string myVar = Session["name"].ToString();
             Session["model"] = Phone3.Text;
-            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Noel Joseph\\source\\repos\\MobileShoppingWebsite\\App_Data\\Database1.mdf\";Integrated Security=True");
+            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\shrey\\source\\repos\\MobiKart\\App_Data\\Database1.mdf;Integrated Security=True");
             SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM Stock WHERE ModelName = '" + Phone3.Text + "'", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
@@ -80,7 +80,7 @@ namespace MobileShoppingWebsite
             }
             else
             {
-                SqlConnection conn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Noel Joseph\\source\\repos\\MobileShoppingWebsite\\App_Data\\Database1.mdf\";Integrated Security=True");
+                SqlConnection conn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\shrey\\source\\repos\\MobiKart\\App_Data\\Database1.mdf;Integrated Security=True");
                 SqlCommand cmd = new SqlCommand(@"INSERT INTO [dbo].[Cart]([ModelName],[Price]) VALUES ('" + Phone3.Text + "', '" + Phone3Price.Text + "')", conn);
                 SqlCommand cmdo = new SqlCommand(@"INSERT INTO [dbo].[Booking]([ModelName],[Price],[User]) VALUES ('" + Phone3.Text + "', '" + Phone3Price.Text + "','" + myVar + "')", conn);
                 conn.Open();

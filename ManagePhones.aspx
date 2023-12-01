@@ -52,10 +52,10 @@
                     <br />
                 </div>
                 <center>
-<asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" DataSourceID="SqlDataSource1" ForeColor="Black" GridLines="Vertical">
+<asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" DataSourceID="SqlDataSource1" ForeColor="Black" GridLines="Vertical" DataKeyNames="ModelName">
     <AlternatingRowStyle BackColor="#CCCCCC" />
     <Columns>
-        <asp:BoundField DataField="ModelName" HeaderText="ModelName" SortExpression="ModelName" />
+        <asp:BoundField DataField="ModelName" HeaderText="ModelName" SortExpression="ModelName" ReadOnly="True" />
         <asp:BoundField DataField="Quantity" HeaderText="Quantity" SortExpression="Quantity" />
     </Columns>
     <FooterStyle BackColor="#CCCCCC" />

@@ -32,8 +32,8 @@
         </ul>
     </nav>
            </header>
-        <div>
-        </div>
+        <div class="container">
+        <h2>User Management</h2>
         <div class="auto-style1">
 
 
@@ -63,7 +63,7 @@
                     <asp:BoundField DataField="CPassword" HeaderText="CPassword" SortExpression="CPassword" />
                     <asp:BoundField DataField="Addr" HeaderText="Addr" SortExpression="Addr" />
                     <asp:BoundField DataField="Phno" HeaderText="Phno" SortExpression="Phno" />
-                    <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
+                    <asp:BoundField DataField="Email " HeaderText="Email " SortExpression="Email " />
                     <asp:BoundField DataField="Gender" HeaderText="Gender" SortExpression="Gender" />
                     <asp:BoundField DataField="UserType" HeaderText="UserType" SortExpression="UserType" />
                 </Columns>
@@ -79,7 +79,12 @@
             </asp:GridView>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [RegTable]"></asp:SqlDataSource>
         </center>
-       </div>        
+       </div>  
+      </div>
     </form>
+
+    <footer>
+         <p>&copy; 2023 MobiKart</p>
+    </footer>
 </body>
 </html>

@@ -5,27 +5,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <link rel="stylesheet" type="text/css" href="ManagePhones.css" />
+    <link rel="stylesheet" type="text/css" href="Reports.css" />
 </head>
-<body>
-    <header>
-           <h1>Welcome to MobiKart</h1>
-    <nav>
-        <ul>
-            <li><a href="AdminHome.aspx">Home</a></li>
-            <li><a href="UserManagement.aspx">User Management</a></li>
-            <li><a href="ManagePhones.aspx">Manage Stocks</a></li>
-            <li><a href="LoginPage.aspx">Logout</a></li>
-        </ul>
-    </nav>
-    </header>
+<body> 
     <form id="form1" runat="server">
-        <div>
+      <header>
+         <h1>Welcome to MobiKart</h1>
+         <nav>
+      <ul>
+          <li><a href="AdminHome.aspx">Home</a></li>
+          <li><a href="UserManagement.aspx">User Management</a></li>
+          <li><a href="ManagePhones.aspx">Manage Stocks</a></li>
+          <li><a href="LoginPage.aspx">Logout</a></li>
+      </ul>
+  </nav>
+  </header>
+        <div class="container">
+            <h2>Booking Reports</h2>
         <center>
-            <br />
-            <br />
-            <br />
-            <br />
             <br />
             <br />
             <br />
@@ -35,7 +32,7 @@
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" DataSourceID="SqlDataSource1" ForeColor="Black">
             <Columns>
                 <asp:BoundField DataField="ModelName" HeaderText="ModelName" SortExpression="ModelName" />
-                <asp:BoundField DataField="Price" HeaderText="Price" SortExpression="Price" />
+                <asp:BoundField DataField="Price " HeaderText="Price " SortExpression="Price " />
                 <asp:BoundField DataField="User" HeaderText="User" SortExpression="User" />
             </Columns>
             <FooterStyle BackColor="#CCCCCC" />
@@ -52,5 +49,9 @@
         </center> 
         </div>
    </form>
+
+    <footer>
+         <p>&copy; 2023 MobiKart</p>
+    </footer>
 </body>
 </html>

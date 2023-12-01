@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="ForgotPswd.css" />
     <title></title>
 </head>
-<body>
+<body style="background-image: url('bgforgot.jpg'); background-repeat:no-repeat">
     <form id="form1" runat="server">
         <div class="container">
         <h2>Forgot Password</h2>

@@ -77,12 +77,12 @@
     <Content Include="App_Data\Database2_log.ldf">
       <DependentUpon>Database2.mdf</DependentUpon>
     </Content>
+    <Content Include="bgforgot.jpg" />
     <Content Include="Cart.aspx" />
     <Content Include="Cart.css" />
     <Content Include="ForgotPswd.aspx" />
     <Content Include="ForgotPswd.css" />
     <Content Include="bgimage.jpg" />
-    <Content Include="img\bgfrgt.jpg" />
     <Content Include="img\cell-phone-icon.png" />
     <Content Include="img\phone1.jpg" />
     <Content Include="img\phone2.jpg" />
@@ -92,6 +92,7 @@
     <Content Include="LoginPage.aspx" />
     <Content Include="Main.aspx" />
     <Content Include="Main.css" />
+    <Content Include="bgimage.png" />
     <Content Include="Usermgmt.css" />
     <Content Include="ManagePhones.aspx" />
     <Content Include="ManagePhones.css" />
